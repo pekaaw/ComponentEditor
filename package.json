@@ -18,8 +18,11 @@
     "css-loader": "^0.28.4",
     "file-loader": "^0.11.2",
     "html-loader": "^0.4.5",
+    "myth-webpack-loader": "^1.0.1",
     "style-loader": "^0.18.2",
     "webpack-dev-server": "^2.5.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-polyfill": "^6.23.0"
+  }
 }

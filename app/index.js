@@ -1,3 +1,5 @@
+
+require("IEPolyfill");
 require("./ComponentEditor/ComponentEditor.js");
 
 (function(window, undefined) {

@@ -1,0 +1,34 @@
+:root {
+  --main-bg-color: orange;
+  --main-fr-color: #ffee99;
+}
+
+template-card {
+  display: block;
+  float: left;
+  width: 200px;
+  padding: 0.5em;
+  background-color: var(--main-bg-color);
+  margin: 0.5em;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+template-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+template-card header {
+  font-size: 24px;
+  padding: 0.25em;
+  background-color: var(--main-fr-color);
+}
+
+template-card .details {
+  margin-top: 0.25em;
+  padding: 0.25em;
+  min-height: 100px;
+  word-wrap: normal;
+  background-color: var(--main-fr-color);
+}
