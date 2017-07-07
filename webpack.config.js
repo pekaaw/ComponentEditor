@@ -1,4 +1,5 @@
 // webpack.config.js
+"use strict";
 let CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {

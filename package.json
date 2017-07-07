@@ -1,14 +1,18 @@
 {
   "name": "componenteditor",
   "version": "1.0.0",
-  "description": "",
+  "description": "Component Editor",
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
     "server": "webpack-dev-server --open"
   },
-  "author": "",
+  "author": "pekaaw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pekaaw/ComponentEditor"
+  },
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -20,6 +24,7 @@
     "html-loader": "^0.4.5",
     "myth-webpack-loader": "^1.0.1",
     "style-loader": "^0.18.2",
+    "webpack": "^3.1.0",
     "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
