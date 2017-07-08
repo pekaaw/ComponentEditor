@@ -15,7 +15,7 @@ export class TemplateCard {
   populate(content) {
     this.element.querySelector("header").innerText = content.header
     this.element.querySelector(".details").innerText = content.details;
-    this.element.querySelector(".details").setAttribute("jsonValue", JSON.stringify({ x: Math.random() * 1000, t: "Hi Mr. " + (Math.random() * 100).toFixed(0) + ". How are you today?" }));
+    this.element.querySelector(".details").setAttribute("data-json", JSON.stringify(content));
     return this.element;
   };
 
