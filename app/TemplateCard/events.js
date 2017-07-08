@@ -8,7 +8,7 @@ export function Card_dragstart(e) {
   this.style.opacity = '0.4';
   sourceElement = this;
   e.dataTransfer.effectAllowed = 'copyMove';
-  e.dataTransfer.setData('text/plain', this.querySelector(".details").getAttribute("jsonValue"));
+  e.dataTransfer.setData('text/plain', this.innerHTML);
 }
 
 export function Card_drag(e) {
@@ -34,7 +34,7 @@ export function Card_drop(e) {
 
   if (sourceElement != this) {
     sourceElement.innerHTML = this.innerHTML;
-    this.innerHTML = e.dataTransfer.getData('text/html');
+    this.innerHTML = e.dataTransfer.getData('text/plain');
   }
 
   return false;

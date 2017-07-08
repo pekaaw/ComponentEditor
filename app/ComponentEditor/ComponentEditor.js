@@ -46,6 +46,8 @@ var textarea = document.body.querySelector("#myText");
 textarea.addEventListener('drop', function(e) {
   if (e.stopPropagation) e.stopPropagation();
   if (e.preventDefault) e.preventDefault();
-  this.value = e.dataTransfer.getData('text/plain');
+  var div = document.createElement('div');
+  div.innerHTML = e.dataTransfer.getData('text/plain');
+  this.value = div.querySelector(".details").getAttribute("jsonValue");;
   return false;
 });
