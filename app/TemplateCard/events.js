@@ -8,9 +8,7 @@ export function Card_dragstart(e) {
   this.style.opacity = '0.4';
   sourceElement = this;
   e.dataTransfer.effectAllowed = 'copyMove';
-  let details = this.querySelector(".details");
-  console.log(details);
-  e.dataTransfer.setData('text/plain', details.getAttribute("jsonValue"));
+  e.dataTransfer.setData('text/plain', this.querySelector(".details").getAttribute("jsonValue"));
 }
 
 export function Card_drag(e) {

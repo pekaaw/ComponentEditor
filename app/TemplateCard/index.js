@@ -1,14 +1,7 @@
 // TemplateCard/index.js
 import css from './style.css';
 import html from './template.html';
-import {Card_click,
-  Card_dragstart,
-  Card_drag,
-  Card_dragenter,
-  Card_dragleave,
-  Card_dragover,
-  Card_drop,
-  Card_dragend } from './events.js';
+import * as events from './events.js';
 const utils = require("./../utils.js");
 const template = utils.TextToHtmlFragment(html);
 
@@ -36,13 +29,13 @@ export class TemplateCard {
   bindEventHandlers() {
     let sourceElement = null;
     const card = this.element.querySelector("template-card");
-    card.addEventListener("click", Card_click );
-    card.addEventListener('dragstart', Card_dragstart );
-    card.addEventListener('drag', Card_drag );
-    card.addEventListener('dragenter', Card_dragenter );
-    card.addEventListener('dragleave', Card_dragleave );
-    card.addEventListener('dragover', Card_dragover );
-    card.addEventListener('drop', Card_drop );
-    card.addEventListener('dragend', Card_dragend );
+    card.addEventListener('click', events.Card_click );
+    card.addEventListener('dragstart', events.Card_dragstart );
+    card.addEventListener('drag', events.Card_drag );
+    card.addEventListener('dragenter', events.Card_dragenter );
+    card.addEventListener('dragleave', events.Card_dragleave );
+    card.addEventListener('dragover', events.Card_dragover );
+    card.addEventListener('drop', events.Card_drop );
+    card.addEventListener('dragend', events.Card_dragend );
   };
 };
