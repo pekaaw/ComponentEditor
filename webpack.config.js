@@ -1,6 +1,5 @@
 // webpack.config.js
 "use strict";
-let CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -30,11 +29,6 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new CopyWebpackPlugin([
-      {from: 'app/**/*.html', to: 'html', flatten: true}
-    ])
-  ],
   resolve: {
     modules: ["node_modules", "app"]
   }
