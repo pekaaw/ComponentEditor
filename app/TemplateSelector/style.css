@@ -1,0 +1,11 @@
+template-selector {
+  display: block;
+  overflow-x: scroll;
+  width: 100%;
+  font-size: 0;
+}
+
+template-selector .container {
+  white-space: nowrap;
+  font-size: 16px;
+}
